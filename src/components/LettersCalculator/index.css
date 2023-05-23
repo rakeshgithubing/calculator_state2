@@ -1,0 +1,101 @@
+/* Write your code here. */
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 420px;
+}
+.heading {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Roboto';
+  margin: 0px;
+  width: 300px;
+  padding-bottom: 15px;
+}
+.paragraph {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Roboto';
+  padding-bottom: 5px;
+}
+.input-text {
+  height: 35px;
+  width: 350px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #e4e7eb;
+  padding-left: 15px;
+}
+.count-container {
+  background-color: #ffffff;
+  height: 60px;
+  width: 160px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.count-paragraph {
+  color: #219a6f;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+}
+.picture {
+  height: 420px;
+  width: 500px;
+}
+
+@media (max-width: 991px) {
+  .bg-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .picture {
+    order: 0;
+  }
+  .main-container {
+    order: 1;
+    width: 700px;
+  }
+  .heading {
+    width: 550px;
+    text-align: center;
+    padding-right: 80px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  .input-text {
+    height: 50px;
+    width: 280px;
+    font-size: 25px;
+  }
+  .count-container {
+    height: 90px;
+    width: 280px;
+  }
+  .count-paragraph {
+    font-size: 35px;
+  }
+}
